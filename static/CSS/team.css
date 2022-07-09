@@ -22,13 +22,27 @@
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    font-family: "Montserrat, sans-serif";
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     color: #fff;
     font-size: 2rem;
     letter-spacing: 0.3em;
     white-space: nowrap;
   }
+
+  h2
+     {
+      /* position: absolute; */
+      /* left: 50%; */
+      /* top: 50%; */
+      /* transform: translate(-50%, -50%); */
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      color: #fff;
+      font-size: 1rem;
+      /* letter-spacing: 0.3em; */
+      white-space: nowrap;
+    }
 
 .frontendteam{
     margin-top: 2rem;
@@ -39,7 +53,7 @@
 }
 .backendteam{
     margin-top: 2rem;
-    margin-left: 55rem;
+    margin-left: 60rem;
     font-family: 'Roboto', sans-serif;
     color:  #D1FAFF;
     /* text-align: justify;  */

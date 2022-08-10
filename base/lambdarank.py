@@ -18,7 +18,7 @@ ranker = LambdaRankNN(input_size=X.shape[1], hidden_layer_sizes=(16, 8,), activa
 # ranker.fit(X, y, qid, epochs=5)
 y_pred = ranker.predict(X)
 # ranker.evaluate(X, y, qid, eval_at=2)
-print(y_pred)
+# print(y_pred)
 predicted_dataset = pd.read_csv('datafile_final_linear.csv')
 predicted_dataset['Predicted Rank'] = y_pred
 predicted_dataset.to_csv('dataset_final_predicted.csv', index=True)

@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>View</title>
+    <link rel="stylesheet" href="../../static/CSS/table.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
             integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -51,7 +52,7 @@
     <div class="table-responsive">
   <table class="table table-striped">
 
-      <thead>
+
       <tr>
           <th>Sr no</th>
           <th>State Name</th>
@@ -63,11 +64,11 @@
           <th>Lab Facilities</th>
           <th>Hostel Facilities</th>
       </tr>
-    </thead>
+
       {% for values in college_vo_list %}
-          <tbody>
+
           <tr>
-              <th scope="row">{{ values.SL_NO }}</th>
+              <td scope="row">{{ values.SL_NO }}</td>
               <td>{{ values.STATE_NAME }}</td>
               <td>{{ values.DISTRICT_NAME }}</td>
               <td>{{ values.UNIVERSITY_NAME }}</td>
@@ -77,7 +78,7 @@
               <td>{{ values.LAB_FACILITIES }}</td>
               <td>{{ values.HOSTEL_FACILITIES }}</td>
           </tr>
-          </tbody>
+
       {% endfor %}
   </table>
 </div>

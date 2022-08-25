@@ -12,13 +12,20 @@ def view_college_list(request):
 
         college_vo_list = CollegeListDiploma.objects.all()
 
-        return render(request, 'admin/viewCollegesList.html', {'college_vo_list': college_vo_list})
+        return render(request, 'admin/home.html', {'college_vo_list': college_vo_list})
 
     except Exception as exc:
         return render(request, 'admin/error.html', {'error': exc})
 
 
 def about(request):
+    try:
+        return render(request, 'admin/about.html', )
+    except Exception as exc:
+        return render(request, 'admin/error.html', {'error': exc})
+
+
+def home(request):
     try:
         return render(request, 'admin/about.html', )
     except Exception as exc:

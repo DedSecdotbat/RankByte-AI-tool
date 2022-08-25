@@ -9,4 +9,6 @@ urlpatterns = [
     path('predicted_colleges/', college_view.predicted_csv, name='predicted_colleges'),
     path('about/', college_view.about, name='about'),
     path('team/', college_view.team, name='team'),
+    path('home/', college_view.home, name='home'),
+
 ]

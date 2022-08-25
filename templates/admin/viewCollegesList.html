@@ -3,100 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <title>View</title>
+    <link rel="stylesheet" href="../../static/CSS/table.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
             integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
-<div class="table-responsive">
-    <table class="table table-striped">
-        <br>
-        <h1 style="color:blue">View Colleges List</h1><br>
-        <thead>
-        <tr>
-            <th>Sr no</th>
-            <th>State Name</th>
-            <th>District Name</th>
-            <th>University Name</th>
-            <th>College Name</th>
-            <th>Total Student Enrollment</th>
-            <th>Total Teachers</th>
-            <th>Lab Facilities</th>
-            <th>Hostel Facilities</th>
-        </tr>
-        </thead>
+{#<div class="table-responsive">#}
+{#    <table class="table table-striped">#}
+{#        <br>#}
+{#        <h1 style="color:blue">View Colleges List</h1><br>#}
+{#        <thead>#}
+{#        <tr>#}
+{#            <th>Sr no</th>#}
+{#            <th>State Name</th>#}
+{#            <th>District Name</th>#}
+{#            <th>University Name</th>#}
+{#            <th>College Name</th>#}
+{#            <th>Total Student Enrollment</th>#}
+{#            <th>Total Teachers</th>#}
+{#            <th>Lab Facilities</th>#}
+{#            <th>Hostel Facilities</th>#}
+{#        </tr>#}
+{#        </thead>#}
+{##}
+{#        {% for values in college_vo_list %}#}
+{#            <tbody>#}
+{#            <tr>#}
+{#                <th scope="row">{{ values.SL_NO }}</th>#}
+{#                <td>{{ values.STATE_NAME }}</td>#}
+{#                <td>{{ values.DISTRICT_NAME }}</td>#}
+{#                <td>{{ values.UNIVERSITY_NAME }}</td>#}
+{#                <td>{{ values.COLLEGE_NAME }}</td>#}
+{#                <td>{{ values.STUDENT_ENROLMENT_TOTAL }}</td>#}
+{#                <td>{{ values.NUMBER_OF_TEACHER_TOTAL }}</td>#}
+{#                <td>{{ values.LAB_FACILITIES }}</td>#}
+{#                <td>{{ values.HOSTEL_FACILITIES }}</td>#}
+{#            </tr>#}
+{#            </tbody>#}
+{#        {% endfor %}#}
+{#    </table>#}
+{#</div>#}
+{#</body>#}
+{#</html>#}
 
-        {% for values in college_vo_list %}
-            <tbody>
-            <tr>
-                <th scope="row">{{ values.SL_NO }}</th>
-                <td>{{ values.STATE_NAME }}</td>
-                <td>{{ values.DISTRICT_NAME }}</td>
-                <td>{{ values.UNIVERSITY_NAME }}</td>
-                <td>{{ values.COLLEGE_NAME }}</td>
-                <td>{{ values.STUDENT_ENROLMENT_TOTAL }}</td>
-                <td>{{ values.NUMBER_OF_TEACHER_TOTAL }}</td>
-                <td>{{ values.LAB_FACILITIES }}</td>
-                <td>{{ values.HOSTEL_FACILITIES }}</td>
-            </tr>
-            </tbody>
-        {% endfor %}
-    </table>
+
+
+    <div class="table-responsive">
+  <table class="table table-striped">
+
+
+      <tr>
+          <th>Sr no</th>
+          <th>State Name</th>
+          <th>District Name</th>
+          <th>University Name</th>
+          <th>College Name</th>
+          <th>Total Student Enrollment</th>
+          <th>Total Teachers</th>
+          <th>Lab Facilities</th>
+          <th>Hostel Facilities</th>
+      </tr>
+
+      {% for values in college_vo_list %}
+
+          <tr>
+              <td scope="row">{{ values.SL_NO }}</td>
+              <td>{{ values.STATE_NAME }}</td>
+              <td>{{ values.DISTRICT_NAME }}</td>
+              <td>{{ values.UNIVERSITY_NAME }}</td>
+              <td>{{ values.COLLEGE_NAME }}</td>
+              <td>{{ values.STUDENT_ENROLMENT_TOTAL }}</td>
+              <td>{{ values.NUMBER_OF_TEACHER_TOTAL }}</td>
+              <td>{{ values.LAB_FACILITIES }}</td>
+              <td>{{ values.HOSTEL_FACILITIES }}</td>
+          </tr>
+
+      {% endfor %}
+  </table>
 </div>
 </body>
 </html>
-
-
-<!--
-    <div class="table-responsive">
-  <Table
-  <table class="table table-striped">
-    Table head
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Name</th>
-        <th>Surname</th>
-        <th>Country</th>
-        <th>City</th>
-        <th>Position</th>
-        <th>Age</th>
-      </tr>
-    </thead>
-    Table head
-    Table body
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Kate</td>
-        <td>Moss</td>
-        <td>USA / The United Kingdom / China / Russia </td>
-        <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-        <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-        <td>23</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Anna</td>
-        <td>Wintour</td>
-        <td>USA / The United Kingdom / China / Russia </td>
-        <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-        <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-        <td>36</td>
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>Jerry</td>
-        <td>Horwitz</td>
-        <td>USA / The United Kingdom / China / Russia </td>
-        <td>New York City / Warsaw / Lodz / Amsterdam / London / Chicago</td>
-        <td>Web Designer /UX designer / Ul designer / JavaScript Developer</td>
-        <td>41</td>
-      </tr>
-    </tbody>
-    <!--Table body
-  </table>
-  <!--Table
-</div>
-
- -->

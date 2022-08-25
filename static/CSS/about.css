@@ -1,54 +1,45 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Luckiest+Guy&family=Roboto:wght@100&display=swap');
-
-*{
-    margin: 0;
-    padding: 0;
-}
-body{
-    max-height: 100vh;
-    scroll-behavior: smooth;
-    overflow-x: auto;
-    /* background-color: #161616;
-    color: white;
-    font-family: "Monument Extended", sans-serif;
-    font-weight: lighter;
-    text-transform: uppercase;
-    display: flex;
-    height: 100vh; */
-}   
-
-.parent{
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-.produt-details{
-    position: absolute;
-    top: 20%;
-    left: 1%;
-    text-align: justify;
-    max-width: 30rem;
-    font-family: 'Roboto', sans-serif;
-    color:  #D1FAFF;
-    font-size: 2rem;
+    /* *{
+        font-family: 'Lato', sans-serif;
+        color: #202020
+    } */
     
-}
-
-.product-details-paragraph{
-   font-family: 'Roboto', sans-serif;
-   margin-top: 2rem;
-    color:#51f3d5cb;
-    font-size: 1.2rem;
-    z-index: 10;
-    font-weight: 800;
-}
-
-.team{
-    font-family: 'Roboto', sans-serif;
-    margin-top: 2rem;
-     color:#51f3d5cb;
-     font-size: 1.2rem;
-     z-index: 10;
-     font-weight: 800;
-
-}
+    body{
+        margin: 0px;
+        padding: 0px;
+        background-color: honeydew;
+        ;
+      }
+        #terminal{
+          /* margin-left: 10rem; */
+          padding-left: 10px;
+          font-weight: bold;
+          width:90%;
+          height:100Vh;
+          font-family:monospace;
+        }
+        #main{
+          height: 50vh;
+        }
+        input{
+          background:honeydew;
+          color:inherit;
+          border:transparent;
+          outline: none;
+          border-bottom: 3px solid rgb(48, 47, 47);
+        }
+        #go{
+          cursor: pointer;
+        }
+        #aboutDetails{
+            text-align: justify;
+        }
+        @media (max-width:1000px) {
+  
+          #terminal{
+            padding-left: 0px;
+            width:100%;
+          }
+  
+  
+        }
+     

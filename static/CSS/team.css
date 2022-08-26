@@ -1,4 +1,69 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Luckiest+Guy&family=Roboto:wght@100&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+#world {
+  background: #F0FFF0;
+  position:absolute;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+}
+#instructions{
+  position:absolute;
+  width:100%;
+  top:50%;
+  margin: auto;
+  margin-top:120px;
+  font-family:'Open Sans', sans-serif;
+  color:#653f4c;
+  font-size:.9em;
+  text-transform: uppercase;
+  text-align : center;
+  user-select: none;
+}
+.lightInstructions {
+  color:#993f4c;
+  font-size:.8em;
+}
+
+#credits{
+  position:absolute;
+  width:100%;
+  margin: auto;
+  bottom:0;
+  margin-bottom:20px;
+  font-family:'Open Sans', sans-serif;
+  color:#b297a2;
+  font-size:0.7em;
+  text-transform: uppercase;
+  text-align : center;
+}
+#credits a {
+  color:#b297a2;
+}
+
+#credits .society6 {
+  color:#993f4c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  DONT DELETE THE BELOW CODE  */
+
+/* @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Luckiest+Guy&family=Roboto:wght@100&display=swap');
 
 
 .mv {
@@ -32,15 +97,11 @@
 
   h2
      {
-      /* position: absolute; */
-      /* left: 50%; */
-      /* top: 50%; */
-      /* transform: translate(-50%, -50%); */
+
       font-family: 'Roboto', sans-serif;
       font-weight: 300;
       color: #fff;
       font-size: 1rem;
-      /* letter-spacing: 0.3em; */
       white-space: nowrap;
     }
 
@@ -49,14 +110,12 @@
     margin-left: 5rem;
     font-family: 'Roboto', sans-serif;
     color:  #D1FAFF;
-    /* text-align: justify; */
 }
 .backendteam{
     margin-top: 2rem;
     margin-left: 60rem;
     font-family: 'Roboto', sans-serif;
     color:  #D1FAFF;
-    /* text-align: justify;  */
 }
 
 .frontendlead{
@@ -91,4 +150,4 @@
     position: absolute;
     color: #fff;
     margin-top: 19rem;
-}
+} */

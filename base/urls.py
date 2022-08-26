@@ -1,5 +1,8 @@
+from django.conf.urls import url
+from django.contrib.staticfiles.views import serve
 from django.urls import path
 
+from SiH_django import settings
 from . import college_view
 from . import views
 
@@ -10,4 +13,6 @@ urlpatterns = [
     path('team/', college_view.team, name='team'),
     path('home/', college_view.home, name='home'),
     path('ranking_table/', college_view.ranking_table, name='ranking_table'),
+    url(r'^media/(?P<path>.*)$', serve, {'document_root': settings.MEDIA_ROOT}),
+    url(r'^static/(?P<path>.*)$', serve, {'document_root': settings.STATIC_ROOT}),
 ]

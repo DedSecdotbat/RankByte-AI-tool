@@ -1,1 +1,1 @@
-web: gunicorn SiH_django.wsgi
+web: gunicorn SiH_django.wsgi --log-file -

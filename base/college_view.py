@@ -33,14 +33,15 @@ def ranking_table(request):
     try:
         dataset = pd.read_csv('base/output.csv')
         d = dataset.set_index('AISHE_ID').T.to_dict('list')
-        res = dict(reversed(list(d.items())))
-
-        # print(res)
-        # for key,value in res:
-        #     if value[3] == 10:
-        #         value[3] = 'Yes'
-        #     else:
-        #         value[3] = "No"
+        srt = dict(reversed(list(d.items())))
+        res = {}
+        i = 0
+        for key, value in srt.items():
+            if i == 5:
+                break
+            res[key] = value
+            i = i + 1
+        print(res)
         return render(request, 'admin/rankingtable.html', {'table': res})
     except Exception as exc:
         return render(request, 'admin/error.html', {'error': exc})
@@ -48,6 +49,6 @@ def ranking_table(request):
 
 def team(request):
     try:
-        return render(request, 'admin/./team.html', )
+        return render(request, 'admin/team.html', )
     except Exception as exc:
         return render(request, 'admin/error.html', {'error': exc})

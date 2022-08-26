@@ -341,8 +341,8 @@ svg {
 }
 
 /* div search bar goes here  */
-#button-bar {
-}
+/* #button-bar {
+} */
 
 .button-wrapper {
     position: absolute;
@@ -352,38 +352,11 @@ svg {
 }
 
 #button {
-<<<<<<< HEAD
-=======
-    margin: 20px;
-}
->>>>>>> 7ddd597d24a04dc86bd87ff40a5cc16e631f1899
 
-#button {
-    font-size: 18px;
-    position: relative;
-    left: 45vw;
-    top: 12vh;
-    width: 140px;
-    height: 40px;
-    color: rgb(32, 25, 25);
-    border: none;
-    border-radius: 5px;
-    padding-right: 10px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
-    background: #797270;
-    transition: all 0.3s ease;
-    display: inline-block;
-    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
-    7px 7px 20px 0px rgba(0, 0, 0, .1),
-    4px 4px 5px 0px rgba(0, 0, 0, .1);
-    outline: none;
-    font-weight: bold;
-}
-
-#button {
-
-<<<<<<< HEAD
+    width: 200px;
+    overflow: hidden;
+    margin: 10px;
+    padding: 12px;
     cursor: pointer;
     user-select: none;
     transition: all 150ms linear;
@@ -396,92 +369,16 @@ svg {
     color: #f0fff0;
     border: 0 none;
     border-radius: var(--borderRadius);
-=======
-    line-height: 42px;
-    padding: 0;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.3;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 160px;
+
+    box-shadow: 2px 5px 10px var(--color-smoke);
 }
->>>>>>> 7ddd597d24a04dc86bd87ff40a5cc16e631f1899
-
-#button span {
-    position: relative;
-    display: block;
-    width: 100%;
-    height: 100%;
-}
-
-#button:before,
-#button:after {
-    position: absolute;
-    content: "";
-    right: 0;
-    top: 0;
-    /* background: rgba(2,126,251,1); */
-    background-color: #fa6e43;
-    transition: all 0.3s ease;
-}
-
-#button:before {
-    height: 0%;
-    width: 2px;
-}
-
-#button:after {
-    width: 0%;
-    height: 2px;
-}
-
-#button:hover {
-    background: transparent;
-    box-shadow: none;
-    color: black;
-}
-<<<<<<< HEAD
-=======
-
-#button:hover:before {
-    height: 100%;
-}
-
-#button:hover:after {
-    width: 100%;
-}
-
-#button span:hover {
-
-    /* color: rgba(2,126,251,1); */
-    /* background-color: #F68664; */
-
-}
-
-#button span:before,
-#button span:after {
-    position: absolute;
-    content: "";
-    left: 0;
-    bottom: 0;
-    /* background: rgba(2,126,251,1); */
-    /* background: gray; */
-    background-color: #fa6e43;
-
-    transition: all 0.3s ease;
-}
-
-#button span:before {
-    width: 2px;
-    height: 0%;
-}
-
-#button span:after {
-    width: 0%;
-    height: 2px;
-}
-
-#button span:hover:before {
-    height: 100%;
-}
-
-#button span:hover:after {
-    width: 100%;
-}
->>>>>>> 7ddd597d24a04dc86bd87ff40a5cc16e631f1899

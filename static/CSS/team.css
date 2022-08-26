@@ -24,6 +24,20 @@
   font-size:.8em;
 }
 
+#reach-us{
+  position:absolute;
+  width:100%;
+  top:60%;
+  margin: auto;
+  margin-top:120px;
+  font-family:'Open Sans', sans-serif;
+  color:#653f4c;
+  font-size:.7em;
+  text-transform: uppercase;
+  text-align : center;
+  user-select: none;
+}
+
 #credits{
   position:absolute;
   width:100%;

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Filter</title>
+    <link rel="stylesheet" href="../../static/CSS/filter.css">
+</head>
+<body>
+<script src="../../static/JS/filter.js"></script>
+<form onsubmit="display()">
+    <label for="state">Choose a State</label>
+
+    <select name="state" id="s1">
+        <option value="volvo">Gujarat</option>
+        <option value="saab">Rajasthan</option>
+        <option value="mercedes">Andhapradesh</option>
+        <option value="audi">Delhi</option>
+
+    </select>
+    <br>
+    <input type="submit" value="Submit">
+</form>
+
+<div class="filter_main" id="filter">
+    <h1>List of all colleges</h1>
+    <div class="table-responsive">
+        <table class="table table-striped">
+
+
+            <tr>
+                <th>Sr no</th>
+                <th>State Name</th>
+                <th>District Name</th>
+                <th>University Name</th>
+                <th>College Name</th>
+                <th>Total Student Enrollment</th>
+                <th>Total Teachers</th>
+                <th>Lab Facilities</th>
+                <th>Hostel Facilities</th>
+            </tr>
+
+            {% for values in college_vo_list %}
+
+                <tr>
+                    <td scope="row">{{ values.SL_NO }}</td>
+                    <td>{{ values.STATE_NAME }}</td>
+                    <td>{{ values.DISTRICT_NAME }}</td>
+                    <td>{{ values.UNIVERSITY_NAME }}</td>
+                    <td>{{ values.COLLEGE_NAME }}</td>
+                    <td>{{ values.STUDENT_ENROLMENT_TOTAL }}</td>
+                    <td>{{ values.NUMBER_OF_TEACHER_TOTAL }}</td>
+                    <td>{{ values.LAB_FACILITIES }}</td>
+                    <td>{{ values.HOSTEL_FACILITIES }}</td>
+                </tr>
+
+            {% endfor %}
+        </table>
+    </div>
+</div>
+</body>
+</html>

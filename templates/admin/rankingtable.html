@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <title>View</title>
     <link rel="stylesheet" href="../../static/CSS/table.css">
+    <script src="../../static/JS/filter.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
             integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
             crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </head>
 <body>
+
+<input type="text" name="search" id="search" placeholder="We are working on it....." style="margin-bottom: 20px">
+
+
 <h1>Top 5 Colleges in India</h1>
 <div class="table-responsive">
     <table class="table table-striped">
-
+        <tbody>
 
         <tr>
             <th>AISHE ID</th>
@@ -36,7 +41,25 @@
             </tr>
 
         {% endfor %}
+        </tbody>
     </table>
 </div>
+{#<script>#}
+{#          const searchInput = document.getElementById("search");#}
+{#      const rows = document.querySelectorAll("tbody tr");#}
+{#      console.log(rows);#}
+{#      searchInput.addEventListener('keyup', function (event) {#}
+{#        const q = event.target.value.toLowerCase();#}
+{#        console.log(q);#}
+{#        if(rows.value==='Shri Govind Dev College'){#}
+{#            alert(rows);#}
+{#        }#}
+{#        rows.forEach((row) => {#}
+{#          row.querySelector('tr').toLowerCase().startsWith(q)#}
+{#            ? (row.style.display = "table-row")#}
+{#            : (row.style.display = "none");#}
+{#        });#}
+{#      });#}
+{#</script>#}
 </body>
 </html>

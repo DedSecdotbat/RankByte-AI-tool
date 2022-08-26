@@ -135,7 +135,7 @@ body {
 }
 
 .wrapper ul li a {
-    color: none;
+    /*color: none;*/
     text-decoration: none;
     font-size: 30px;
     font-weight: 500;
@@ -211,7 +211,7 @@ input[type="checkbox"] {
 svg {
     width: 256px;
     height: 256px;
-    margin-left: 90%;
+    margin-left: 80%;
     margin-top: 10%;
 }
 
@@ -356,6 +356,11 @@ svg {
     width: 200px;
     overflow: hidden;
     margin: 10px;
+    /*margin-bottom: 150px;*/
+    position: relative;
+    bottom: 100px;
+    right: 10px;
+    margin-right: 20px;
     padding: 12px;
     cursor: pointer;
     user-select: none;

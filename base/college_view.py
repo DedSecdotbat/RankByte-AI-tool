@@ -41,7 +41,6 @@ def ranking_table(request):
                 break
             res[key] = value
             i = i + 1
-        print(res)
         return render(request, 'admin/rankingtable.html', {'table': res})
     except Exception as exc:
         return render(request, 'admin/error.html', {'error': exc})

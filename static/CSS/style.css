@@ -341,17 +341,17 @@ svg {
 }
 
 /* div search bar goes here  */
-.search-bar {
+#button-bar {
 }
 
-.search-wrapper {
+.button-wrapper {
     position: absolute;
     transform: translate(-50%, -50%);
     top: 90%;
     left: 50%;
 }
 
-.btn1 {
+#button {
 
     width: 200px;
     overflow: hidden;
@@ -367,8 +367,8 @@ svg {
     text-decoration: none !important;
     text-transform: none;
     text-transform: capitalize;
-
-    color: #fff;
+    background: #000;
+    color: #f0fff0;
     border: 0 none;
     border-radius: var(--borderRadius);
 
@@ -385,12 +385,4 @@ svg {
     flex: 0 0 160px;
 
     box-shadow: 2px 5px 10px var(--color-smoke);
-}
-
-#button {
-    color: #1cc7d0;
-    background: #000;
-
-    
-
 }

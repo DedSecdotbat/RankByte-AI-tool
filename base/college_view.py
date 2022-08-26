@@ -34,6 +34,7 @@ def ranking_table(request):
         dataset = pd.read_csv('base/output.csv')
         d = dataset.set_index('AISHE_ID').T.to_dict('list')
         res = dict(reversed(list(d.items())))
+
         # print(res)
         # for key,value in res:
         #     if value[3] == 10:

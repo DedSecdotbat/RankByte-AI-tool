@@ -22,7 +22,6 @@ from flask_sqlalchemy import SQLAlchemy
 DatabaseWrapper.data_types['DateTimeField'] = 'datetime'
 
 TEMPLATE_URL = os.path.join(BASE_DIR, 'templates')
-
 DEBUG = False
 
 ALLOWED_HOSTS = ['rankbyte.herokuapp.com', 'localhost', '127.0.0.1']

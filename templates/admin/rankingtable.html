@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>View</title>
+    <link rel="stylesheet" href="../../static/CSS/table.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.20.0/js/mdb.min.js"
+            integrity="sha512-XFd1m0eHgU1F05yOmuzEklFHtiacLVbtdBufAyZwFR0zfcq7vc6iJuxerGPyVFOXlPGgM8Uhem9gwzMI8SJ5uw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+
+<div class="table-responsive">
+    <table class="table table-striped">
+
+
+        <tr>
+            <th>AISHE ID</th>
+            <th>College Name</th>
+            <th>Teachers</th>
+            <th>Students</th>
+            <th>Hostels</th>
+            <th>Labs</th>
+            <th>PhD</th>
+            <th>S_F_Ratio</th>
+            <th>Score</th>
+        </tr>
+
+        {% for key,values in table.items %}
+
+            <tr>
+                <td scope="row">{{ key }}</td>
+                {% for items in values %}
+                    <td>{{ items }}</td>
+                {% endfor %}
+            </tr>
+
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

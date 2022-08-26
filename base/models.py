@@ -59,3 +59,18 @@ class CollegeListDiploma(models.Model):
 
     class Meta:
         db_table = 'colleges_list_diploma'
+
+# class PredictedData(models.Model):
+#     AISHE_ID = models.CharField(db_column='AISHE_ID', max_length=255)
+#     College_Name = models.CharField(db_column='College_Name', max_length=255)
+#     Teachers = models.CharField(db_column='Teachers', max_length=255)
+#     Students = models.CharField(db_column='Students', max_length=255)
+#     Hostels = models.CharField(db_column='Hostels', max_length=255)
+#     Labs = models.CharField(db_column='Labs', max_length=255)
+#     PhD = models.CharField(db_column='PhD', max_length=255)
+#     S_F_Ratio = models.CharField(db_column='S_F_Ratio', max_length=255)
+#     Score = models.CharField(db_column='Score', max_length=255)
+#
+#     class Meta:
+#         db_table = 'Predicted_Colleges_List'
+#

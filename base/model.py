@@ -10,12 +10,15 @@ from sklearn.preprocessing import StandardScaler
 
 # load dataset
 # dataset = pd.read_csv('datafile_final_linear.csv')
-dataset = pd.read_csv('dataset_final_predicted.csv')
-dataset.drop(dataset.index[dataset['Predicted Rank'] == 0], inplace=True)
-dataset.head()
-dataset.info()
+df = pd.read_csv('data_lamdarank.csv')
+# dataset.drop(dataset.index[dataset['Predicted Rank'] == 0], inplace = True)
+df.head()
+df.info()
 # dataset.shape
 # dataset.describe().T
+dataset = df.dropna()
+dataset.head()
+dataset.info()
 print(str('Any missing data or NaN in the dataset:'), dataset.isnull().values.any())
 
 corr_var = dataset.corr()
@@ -25,7 +28,7 @@ sns.heatmap(corr_var, annot=True, cmap='BuPu')
 plt.show()
 
 # defining feature matrix(X) and response vector(y)
-X = dataset.iloc[:, 12:-1].values
+X = dataset.iloc[:, 2:-1].values
 y = dataset.iloc[:, -1].values
 
 print('X = ', X)

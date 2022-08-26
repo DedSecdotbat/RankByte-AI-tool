@@ -7,8 +7,9 @@ from LambdaRankNN import LambdaRankNN
 #               [0.3, 0.4, 0.1],
 #               [0.8, 0.4, 0.3],
 #               [0.9, 0.35, 0.25]])
-dataset = pd.read_csv('datafile_final_linear.csv')
-X = dataset.iloc[:, 12:-1].values
+dataset = pd.read_csv('data.csv', encoding='cp1252')
+# dataset.info()
+X = dataset.iloc[:, 2:-1].values
 
 # y = np.array([0, 1, 0, 0, 2])
 # qid = np.array([1, 1, 1, 2, 2])
@@ -18,7 +19,7 @@ ranker = LambdaRankNN(input_size=X.shape[1], hidden_layer_sizes=(16, 8,), activa
 # ranker.fit(X, y, qid, epochs=5)
 y_pred = ranker.predict(X)
 # ranker.evaluate(X, y, qid, eval_at=2)
-# print(y_pred)
-predicted_dataset = pd.read_csv('datafile_final_linear.csv')
+print(y_pred)
+predicted_dataset = pd.read_csv('data.csv', encoding='cp1252')
 predicted_dataset['Predicted Rank'] = y_pred
-predicted_dataset.to_csv('dataset_final_predicted.csv', index=True)
+predicted_dataset.to_csv('data_lamdarank.csv', index=False)

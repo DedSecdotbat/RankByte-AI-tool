@@ -28,7 +28,7 @@ sns.heatmap(corr_var, annot=True, cmap='BuPu')
 plt.show()
 
 # defining feature matrix(X) and response vector(y)
-X = dataset.iloc[:, 2:-1].values
+X = dataset.iloc[:, 3:-1].values
 y = dataset.iloc[:, -1].values
 
 print('X = ', X)

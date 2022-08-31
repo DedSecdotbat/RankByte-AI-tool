@@ -9,7 +9,7 @@ from LambdaRankNN import LambdaRankNN
 #               [0.9, 0.35, 0.25]])
 dataset = pd.read_csv('data.csv', encoding='cp1252')
 # dataset.info()
-X = dataset.iloc[:, 2:-1].values
+X = dataset.iloc[:, 3:-1].values
 
 # y = np.array([0, 1, 0, 0, 2])
 # qid = np.array([1, 1, 1, 2, 2])

@@ -29,15 +29,32 @@ def home(request):
         return render(request, 'admin/error.html', {'error': exc})
 
 
-def ranking_table(request):
+def ranking_2018(request):
     try:
-        dataset = pd.read_csv('base/output.csv')
+        dataset = pd.read_csv('base/output2018.csv')
         d = dataset.set_index('AISHE_ID').T.to_dict('list')
         srt = dict(reversed(list(d.items())))
         res = {}
         i = 0
         for key, value in srt.items():
-            if i == 5:
+            if i == 100:
+                break
+            res[key] = value
+            i = i + 1
+        return render(request, 'admin/rankingtable.html', {'table': res})
+    except Exception as exc:
+        return render(request, 'admin/error.html', {'error': exc})
+
+
+def ranking_2019(request):
+    try:
+        dataset = pd.read_csv('base/output2019.csv')
+        d = dataset.set_index('AISHE_ID').T.to_dict('list')
+        srt = dict(reversed(list(d.items())))
+        res = {}
+        i = 0
+        for key, value in srt.items():
+            if i == 100:
                 break
             res[key] = value
             i = i + 1
